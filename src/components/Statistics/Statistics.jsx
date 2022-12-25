@@ -13,11 +13,11 @@ export const Statistics = ({ title, stats }) => {
     <Section>
        {title && <Title>{title}</Title>}
       <ItemList>
-        {stats.map(stat => {
+        {stats.map(({id,label,percentage}) => {
           return (
-            <Item key={stat.id} style={{ backgroundColor: randomHexColor() }}>
-              <Label>{stat.label}</Label>
-              <Percentage>{stat.percentage}</Percentage>
+            <Item key={id} style={{ backgroundColor: randomHexColor() }}>
+              <Label>{label}</Label>
+              <Percentage>{percentage}</Percentage>
             </Item>
           );
         })}
@@ -30,7 +30,7 @@ function randomHexColor() {
 }
 
 Statistics.propTypes = {
- title: PropTypes.string.isRequired,
+ title: PropTypes.string,
  stats: PropTypes.arrayOf(PropTypes.shape({
   id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,

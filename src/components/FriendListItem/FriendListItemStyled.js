@@ -11,14 +11,14 @@ display: flex;
 
 export const Avatar = styled.img`
 width: 60px;
-margin-right: 8px};
+margin-right: 8px;
 `
 export const IsOnline = styled.div`
-margin-right: 8px};
+margin-right: 8px;
   border-radius: 50px;
   width: 16px;
   height: 16px;
-  background-color: isOnline ? green : red;
+
 `
 
 export const Name = styled.p`
