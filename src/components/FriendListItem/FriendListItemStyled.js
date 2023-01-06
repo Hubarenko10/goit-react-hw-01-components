@@ -18,7 +18,7 @@ margin-right: 8px;
   border-radius: 50px;
   width: 16px;
   height: 16px;
-
+/* background-color:${props =>props.friends.isOnline === true ? "green" : "red" }; */
 `
 
 export const Name = styled.p`

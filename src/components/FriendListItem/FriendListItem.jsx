@@ -3,7 +3,7 @@ import {Item,Avatar,IsOnline,Name} from './FriendListItemStyled'
 export const FriendListItem = ({name,avatar,isOnline})=>{
 return (
     <Item>
-        <IsOnline style={{backgroundColor: isOnline === true ? 'green' : 'red'}}>{isOnline}</IsOnline>
+        <IsOnline>{isOnline}</IsOnline>
         <Avatar src={avatar} alt={name} />
         <Name>{name}</Name>
     </Item>
